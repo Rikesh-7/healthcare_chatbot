@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:healthcare_chatbot/chat.dart';
-import 'chat_screen.dart'; // Import the chat screen page
+// Import the chat screen page
 import 'login_page.dart'; // Import the login page
 import 'signup_page.dart'; // Import the signup page
 
@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Health Care Chatbot',
       theme: ThemeData(
         primarySwatch: Colors.blue,
