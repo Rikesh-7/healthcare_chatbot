@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:healthcare_chatbot/chat.dart';
 import 'chat_screen.dart'; // Import the chat screen page
 import 'login_page.dart'; // Import the login page
 import 'signup_page.dart'; // Import the signup page
@@ -19,7 +20,13 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => LoginPage(), // Define routes
         '/signup': (context) => SignupPage(), // Signup page route
-        '/chat': (context) => ChatScreen(), // Chat screen route
+        '/chat': (context) => ChatPage(
+            maintitle:
+                'Title', // Replace with the actual title you want to pass
+            message:
+                'Message', // Replace with the actual message you want to pass
+            isSender: true, // Replace with the actual sender value
+            time: DateTime.now()), // Chat screen route
       },
     );
   }
